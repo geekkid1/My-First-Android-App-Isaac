@@ -8,28 +8,28 @@
     tools:context="com.example.ibtro.myapplication.MainActivity">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editMessage"
         android:layout_width="0dp"
         android:layout_height="44dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         android:ems="10"
+        android:hint="@string/edit_message"
         android:inputType="textPersonName"
-        android:text="@string/edit_message"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/edit_message"
-        app:layout_constraintRight_toLeftOf="@+id/button2"
-        android:layout_marginLeft="16dp" />
+        app:layout_constraintRight_toLeftOf="@+id/sendMessage"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/sendMessage"
         android:layout_width="95dp"
         android:layout_height="48dp"
-        android:text="@string/button_send"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editText"
-        app:layout_constraintLeft_toRightOf="@+id/editText"
-        tools:text="@string/button_send"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginLeft="16dp" />
+        android:onClick="sendMessage"
+        android:text="@string/button_send"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editMessage"
+        app:layout_constraintLeft_toRightOf="@+id/editMessage"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:text="@string/button_send" />
 </android.support.constraint.ConstraintLayout>
